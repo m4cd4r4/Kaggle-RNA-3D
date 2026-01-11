@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+
+  .stat-card {
+    @apply glassmorphism rounded-xl p-6 hover:shadow-2xl transition-all duration-300 hover:scale-105;
+  }
+}

@@ -1,0 +1,25 @@
+# Default configuration for RNA 3D Folding experiments
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  external_dir: "data/external"
+
+model:
+  name: "baseline"
+  hidden_dim: 256
+  num_layers: 6
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 1e-4
+  epochs: 100
+  early_stopping_patience: 10
+  gradient_clip: 1.0
+
+experiment:
+  seed: 42
+  device: "cuda"
+  num_workers: 4
+  wandb_project: "rna-3d-folding"

@@ -1,0 +1,62 @@
+# Data
+data/raw/*
+data/processed/*
+data/external/*
+!data/*/.gitkeep
+
+# Submissions
+submissions/*.csv
+submissions/*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Weights & logs
+*.pt
+*.pth
+*.ckpt
+wandb/
+logs/
+outputs/
+
+# Secrets
+.env
+kaggle.json
+
+# Next.js (web dashboard)
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/.env*.local
+web/.vercel
+web/*.tsbuildinfo
+web/next-env.d.ts
+
+# npm/yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
